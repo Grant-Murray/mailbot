@@ -1,0 +1,4 @@
+postmaster@mailbot.net : post me post me
+fromster@mailbot.net : from me from me
+toster@mailbot.net : to me to me
+no-reply@mailbot.net : zFbfrrRUNBdxBHaaJCNh8X
