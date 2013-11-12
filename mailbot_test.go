@@ -43,7 +43,7 @@ func TestUpgradeTLSSend_Remote(t *testing.T) {
 	sc := ServerConfig{Host: "mail.grantmurray.com",
 		Port:      26,
 		User:      "no-reply@grantmurray.com",
-		Password:  "zFbfrrRUNBdxBHaaJCNh8X",
+		Password:  "!!ProperPasswordNeeded!!<---------------------------",
 		EmailFrom: "no-reply@grantmurray.com"}
 
 	// bluehost insists on a From: header, and gmail wants a To: header otherwise it is treated as spam
