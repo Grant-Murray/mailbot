@@ -14,7 +14,15 @@ if [ "$NS" != "$EXPECTNS" ]; then
 fi
 
 # all the files are copied to /tmp 
-MDIR=/home/grant/glm-go/src/gopkgs.grantmurray.com/mailbot
+for MDIR in './' './mailbot' './Grant-Murray/mailbot' './github.com/Grant-Murray/mailbot' 'NOTFOUND'
+do
+  [ -f "$MDIR/usercreds.txt" ] && break
+done
+
+if [ "${MDIR}" = "NOTFOUND" ]; then
+  echo "Unable to find the mailbot directory"
+  exit 1
+fi
 
 cp /etc/ssl/GLM-Hosts/test.mailbot.net.key /tmp
 cp /etc/ssl/GLM-Hosts/test.mailbot.net.pem /tmp
