@@ -7,7 +7,7 @@ fi
 
 # check /etc/hosts
 NS=$( grep mailbot /etc/hosts )
-EXPECTNS="10.10.10.6 test.mailbot.net"
+EXPECTNS="10.10.10.2 test.mailbot.net"
 if [ "$NS" != "$EXPECTNS" ]; then
   echo "/etc/hosts does not contain $EXPECTNS"
   exit
