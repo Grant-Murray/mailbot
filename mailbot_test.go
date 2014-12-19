@@ -40,7 +40,7 @@ func TestUpgradeTLSSend_Local(t *testing.T) {
 func TestUpgradeTLSSend_Remote(t *testing.T) {
 
 	var err error
-	sc := ServerConfig{Host: "mail.grantmurray.com",
+	sc := ServerConfig{Host: "box375.bluehost.com",
 		Port:      26,
 		User:      "no-reply@grantmurray.com",
 		Password:  "!!ProperPasswordNeeded!!<---------------------------",

@@ -7,14 +7,14 @@ fi
 
 # check /etc/hosts
 NS=$( grep mailbot /etc/hosts )
-EXPECTNS="10.10.10.2 test.mailbot.net"
+EXPECTNS="10.10.10.100 test.mailbot.net"
 if [ "$NS" != "$EXPECTNS" ]; then
   echo "/etc/hosts does not contain $EXPECTNS"
   exit
 fi
 
 # all the files are copied to /tmp 
-for MDIR in './' './mailbot' './Grant-Murray/mailbot' './github.com/Grant-Murray/mailbot' 'NOTFOUND'
+for MDIR in './' './mailbot' './code.grantmurray.com/mailbot' 'NOTFOUND'
 do
   [ -f "$MDIR/usercreds.txt" ] && break
 done
